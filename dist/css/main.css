@@ -14,8 +14,11 @@
   .menu-btn.close {
     transform: rotate(180deg); }
   .menu-btn .btn-line:nth-child(1) {
-    background: red;
     transform: rotate(45deg) translate(5px, 5px); }
+  .menu-btn .btn-line:nth-child(2) {
+    opacity: 0; }
+  .menu-btn .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -5px); }
 
 * {
   box-sizing: border-box; }
