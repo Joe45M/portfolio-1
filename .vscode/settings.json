@@ -1,0 +1,5 @@
+{
+    "editor.cursorBlinking": "phase",
+    "html-css-class-completion.enableEmmetSupport": true,
+    "files.autoSave": "afterDelay"
+}
