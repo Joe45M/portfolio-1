@@ -53,48 +53,38 @@
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 100px;
-      height: 100px;
-      background: url("");
-      border-radius: 50%;
-      border: solid 3px #fd9001; }
     .menu-branding .nav-item {
       transform: translate3d(600px, 0, 0);
       transition: all 0.1s ease-out; }
       .menu-branding .nav-item.show {
         transform: translate3d(0px, 0, 0); }
-      .menu-branding .nav-item.current > a {
-        color: #fd9001; }
-    .menu-branding .nav-link {
-      display: inline-block;
-      position: relative;
-      font-size: 30px;
-      text-orientation: uppercase;
-      padding: 1rem 0;
-      color: #fff;
-      text-decoration: none;
-      transition: all 0.1s ease-out; }
-      .menu-branding .nav-link:hover {
-        color: #fd9001; }
-    .menu-branding .nav-link {
-      display: inline-block;
-      position: relative;
-      font-size: 30px;
-      text-transform: uppercase;
-      padding: 1rem 0;
-      font-weight: 300;
-      color: #fd9001;
-      text-decoration: none;
-      transition: all 0.1s ease-out; }
-  .menu .nav-item:nth-child(1) {
-    transition-delay: 0.1s; }
-  .menu .nav-item:nth-child(2) {
-    transition-delay: 0.2s; }
-  .menu .nav-item:nth-child(3) {
-    transition-delay: 0.3s; }
-  .menu .nav-item:nth-child(4) {
-    transition-delay: 0.4s; }
+    .menu-branding.current a {
+      color: #01adfd; }
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  text-orientation: uppercase;
+  padding: 1rem 0;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.1s ease-out; }
+  .nav-link:hover {
+    color: #01adfd; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
 
 * {
   box-sizing: border-box; }
@@ -146,7 +136,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #fd9001; }
+  color: #01adfd; }
 
 main {
   padding: 4rem;
@@ -156,7 +146,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #fd9001;
+        color: #01adfd;
         transition: all 0.1s ease-out; }
   main#home {
     overflow: hidden; }
@@ -172,11 +162,12 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #fd9001 3px solid; }
+  border: #01adfd 3px solid; }
 
 .bio {
   grid-area: bio;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: Exo; }
 
 .job1 {
   grid-area: job1; }
@@ -190,18 +181,18 @@ main {
 .job {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: #fd9001 5px solid; }
+  border-bottom: #01adfd 5px solid; }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1fr);
   grid-gap: 0.7rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #fd9001;
+      border-color: #01adfd;
       transition: all 0.1s ease-out; }
 
 .boxes {
@@ -218,10 +209,12 @@ main {
     transition: all 0.1s ease-out; }
     .boxes div::hover {
       padding: 0.5rem 1.5;
-      background: #fd9001;
+      background: #01adfd;
       color: #000; }
       .boxes div::hover span {
-        color: #000; }
+        color: #000;
+        background: #fff;
+        transition: all 0.1s ease-out; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -229,8 +222,8 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #fd9001;
-    color: set-text-color #fd9001; }
+    background: #01adfd;
+    color: set-text-color #01adfd; }
 
 .btn-dark {
   background: black;
@@ -244,7 +237,7 @@ main {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
-  color: #fff;
+  color: #000;
   height: 60px; }
 
 @media screen and (min-width: 1201) {
