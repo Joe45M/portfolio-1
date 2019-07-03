@@ -112,7 +112,9 @@ main {
 .projects {
     display: grid;
     grid-template-columns: repeat(1fr);
-    grid-gap: 0.7rem;
+    grid-gap: 1.5rem;
+    padding: 25px;
+    text-align: center;
 
 
 
@@ -124,7 +126,7 @@ main {
             opacity: 0.5;
             border-color: $secondary-color;
             @include easeOut;
-        }
+                  }
     }
 }
 // Contact Page
